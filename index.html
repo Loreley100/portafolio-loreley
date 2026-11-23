@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Loreley Carrillo Juárez · Portafolio</title>
+  <meta name="description" content="Portafolio de Loreley Carrillo Juárez, desarrolladora de software junior y estudiante de Ingeniería en Desarrollo y Gestión de Software en UTEZ. Caso principal: monitoreo del tueste de café con IoT en CENIDET.">
+  <meta name="author" content="Loreley Carrillo Juárez">
+  <meta name="theme-color" content="#0f5d63">
+  <meta property="og:title" content="Loreley Carrillo Juárez · Portafolio">
+  <meta property="og:description" content="Desarrolladora de software junior. Formación en UTEZ y estadía profesional en CENIDET con un sistema IoT para monitorear el tueste de café.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_MX">
+  <link rel="manifest" href="./manifest.json">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="./assets/icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#inicio">Loreley Carrillo</a>
+      <nav class="site-nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Portafolio profesional</p>
+          <h1 id="hero-title">Loreley Carrillo Juárez</h1>
+          <p class="hero-role">Desarrolladora de software junior</p>
+          <p class="hero-lead">Estudio Ingeniería en Desarrollo y Gestión de Software en UTEZ. He trabajado en proyectos de desarrollo web, bases de datos e integración de sensores, con experiencia de estadía profesional en CENIDET.</p>
+          <p class="hero-availability">Cuernavaca, Morelos · Busco una oportunidad de estadía profesional</p>
+          <div class="hero-actions">
+            <a class="button" href="#cenidet">Ver proyecto CENIDET</a>
+            <a class="text-link" href="#contacto">Contactarme <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+
+        <aside class="hero-aside" aria-label="Resumen profesional">
+          <figure class="portrait">
+            <img src="./assets/images/retrato.jpg" alt="Retrato de Loreley Carrillo Juárez." width="535" height="710">
+          </figure>
+          <dl class="quick-facts">
+            <div>
+              <dt>Formación</dt>
+              <dd>Ingeniería en Desarrollo y Gestión de Software, UTEZ</dd>
+            </div>
+            <div>
+              <dt>Estadía</dt>
+              <dd>CENIDET · 2025</dd>
+            </div>
+            <div>
+              <dt>Enfoque</dt>
+              <dd>Sistemas, datos e IoT</dd>
+            </div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="proyectos" aria-labelledby="projects-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="section-label">01 · Proyectos</p>
+          <h2 id="projects-title">Trabajo seleccionado</h2>
+          <p class="section-intro">Un proyecto de estadía como caso principal y dos trabajos académicos que muestran otras áreas de mi formación.</p>
+        </div>
+
+        <article class="case-study" id="cenidet" aria-labelledby="cenidet-title">
+          <header class="case-header">
+            <p class="case-flag">Caso principal</p>
+            <h3 id="cenidet-title">Monitoreo del tueste de café con IoT</h3>
+            <p class="case-meta">CENIDET · Estadía profesional · 2025</p>
+            <p class="case-summary">Desarrollé un sistema para registrar temperatura y tiempo durante el tueste de café y visualizar las curvas desde una aplicación web. El proyecto integró sensores, firmware y una interfaz para consultar y exportar las sesiones.</p>
+          </header>
+
+          <div class="case-layout">
+            <aside class="case-facts" aria-label="Ficha del proyecto">
+              <dl>
+                <div>
+                  <dt>Contexto</dt>
+                  <dd>CENIDET, Cuernavaca</dd>
+                </div>
+                <div>
+                  <dt>Rol</dt>
+                  <dd>Firmware, interfaz web y pruebas de integración.</dd>
+                </div>
+                <div>
+                  <dt>Año</dt>
+                  <dd>2025</dd>
+                </div>
+                <div>
+                  <dt>Alcance</dt>
+                  <dd>Monitoreo y registro. Sin control automático de la tostadora.</dd>
+                </div>
+              </dl>
+            </aside>
+
+            <div class="case-body">
+              <section aria-labelledby="problema-title">
+                <h4 id="problema-title">El problema</h4>
+                <p>El registro manual de las temperaturas dificultaba conservar y consultar la información de cada sesión. El objetivo fue digitalizar el seguimiento del tueste mediante una solución accesible de monitoreo.</p>
+              </section>
+
+              <section aria-labelledby="aportacion-title">
+                <h4 id="aportacion-title">Mi aportación</h4>
+                <ul class="contribution-list">
+                  <li>Integré el ESP8266 con un termopar tipo K y un módulo MAX6675 para capturar la temperatura.</li>
+                  <li>Desarrollé el firmware en C++ para leer el sensor y transmitir los datos.</li>
+                  <li>Implementé la interfaz web responsiva y las gráficas de temperatura con Chart.js.</li>
+                  <li>Guardé el historial de sesiones en LocalStorage y añadí la exportación de información.</li>
+                  <li>Realicé la integración y las pruebas durante sesiones de tueste.</li>
+                </ul>
+              </section>
+
+              <section aria-labelledby="funcionamiento-title">
+                <h4 id="funcionamiento-title">Cómo funciona</h4>
+                <figure class="architecture">
+                  <ol class="flow" aria-label="Flujo de datos del sistema">
+                    <li>
+                      <span class="flow-step">01</span>
+                      <strong>Termopar tipo K + MAX6675</strong>
+                      <span>Captura la temperatura.</span>
+                    </li>
+                    <li>
+                      <span class="flow-step">02</span>
+                      <strong>ESP8266</strong>
+                      <span>Lee el sensor y transmite por Wi-Fi.</span>
+                    </li>
+                    <li>
+                      <span class="flow-step">03</span>
+                      <strong>WebSocket por Wi-Fi</strong>
+                      <span>Mantiene el enlace con la interfaz.</span>
+                    </li>
+                    <li>
+                      <span class="flow-step">04</span>
+                      <strong>Interfaz web</strong>
+                      <span>Grafica, guarda y exporta.</span>
+                    </li>
+                  </ol>
+                  <div class="flow-notes">
+                    <div>
+                      <strong>Chart.js</strong>
+                      <p>Muestra las curvas de temperatura y tiempo.</p>
+                    </div>
+                    <div>
+                      <strong>LocalStorage</strong>
+                      <p>Conserva el historial de sesiones en el navegador.</p>
+                    </div>
+                    <div>
+                      <strong>SPIFFS</strong>
+                      <p>Almacena los archivos de la interfaz en el microcontrolador.</p>
+                    </div>
+                  </div>
+                  <figcaption>Esquema de la arquitectura implementada. La comunicación ocurre en la red local; no representa un servicio en la nube.</figcaption>
+                </figure>
+              </section>
+
+              <section aria-labelledby="funciones-title">
+                <h4 id="funciones-title">Funciones principales</h4>
+                <ul class="feature-list">
+                  <li>
+                    <strong>Visualización de temperatura y tiempo</strong>
+                    <span>Curva de la sesión en la interfaz.</span>
+                  </li>
+                  <li>
+                    <strong>Historial de sesiones</strong>
+                    <span>Consulta de registros anteriores.</span>
+                  </li>
+                  <li>
+                    <strong>Registro del primer crack con cronómetro</strong>
+                    <span>Marca el momento y cuenta el tiempo transcurrido.</span>
+                  </li>
+                  <li>
+                    <strong>Exportación a Excel e imágenes</strong>
+                    <span>Descarga de datos y gráficas de la sesión.</span>
+                  </li>
+                  <li>
+                    <strong>Acceso desde dispositivos móviles en la red disponible</strong>
+                    <span>Interfaz responsiva desde la Wi-Fi local.</span>
+                  </li>
+                </ul>
+              </section>
+
+              <section aria-labelledby="reto-title">
+                <div class="callout">
+                  <h4 id="reto-title">Un reto técnico</h4>
+                  <p>Durante las pruebas se presentaron lecturas inestables del termopar. Se trabajó en el filtrado de datos y en la estabilidad de la alimentación, validando el comportamiento durante pruebas de tueste.</p>
+                </div>
+              </section>
+
+              <section aria-labelledby="resultado-title">
+                <h4 id="resultado-title">Resultado</h4>
+                <p>Se obtuvo un sistema funcional para visualizar y conservar registros digitales de las sesiones, con pruebas en un entorno real de tueste.</p>
+                <p class="scope-note">El alcance fue el monitoreo y el registro; el control automático de la tostadora no formó parte del proyecto.</p>
+              </section>
+
+              <section aria-labelledby="tecnologias-title">
+                <h4 id="tecnologias-title">Tecnologías</h4>
+                <p class="tech-line">ESP8266 · C++ · MAX6675 · HTML · CSS · JavaScript · Chart.js · WebSocket · LocalStorage · SPIFFS</p>
+                <p class="small-note">Chart.js pertenece a la interfaz del proyecto CENIDET; este portafolio no depende de esa librería.</p>
+              </section>
+            </div>
+          </div>
+
+          <section class="case-evidence" aria-labelledby="evidencia-title">
+            <div class="evidence-head">
+              <h4 id="evidencia-title">Evidencia visual</h4>
+              <p>Fotografías del montaje y capturas de la interfaz obtenidas durante la estadía.</p>
+            </div>
+
+            <div class="evidence-grid">
+              <figure class="evidence-main">
+                <a href="./assets/images/interfaz-tueste.png" aria-label="Abrir la captura de la interfaz en tamaño completo">
+                  <img src="./assets/images/interfaz-tueste.png" alt="Interfaz web del monitoreo de tueste con una curva de temperatura, botones de control y el cronómetro del primer crack." width="692" height="618" loading="lazy">
+                </a>
+                <figcaption>Interfaz web durante una sesión de tueste. La curva muestra la temperatura en el tiempo; debajo aparecen los controles y el cronómetro del primer crack.</figcaption>
+              </figure>
+
+              <div class="evidence-stack">
+                <figure>
+                  <a href="./assets/images/montaje-tueste.jpg" aria-label="Abrir la fotografía del montaje en tamaño completo">
+                    <img src="./assets/images/montaje-tueste.jpg" alt="Tostadora de café negra con el circuito del sistema sobre una base verde y una computadora a un lado." width="411" height="545" loading="lazy">
+                  </a>
+                  <figcaption>Montaje del sistema en la tostadora, con el circuito sobre una base verde.</figcaption>
+                </figure>
+
+                <figure>
+                  <a href="./assets/images/equipo-registro.jpg" aria-label="Abrir la fotografía del equipo de registro en tamaño completo">
+                    <img src="./assets/images/equipo-registro.jpg" alt="Computadora con la interfaz abierta, una báscula digital, un recipiente con granos de café y una libreta sobre una mesa de trabajo." width="411" height="311" loading="lazy">
+                  </a>
+                  <figcaption>Equipo de registro durante una prueba: interfaz abierta, báscula, granos y libreta.</figcaption>
+                </figure>
+              </div>
+
+              <figure class="evidence-wide">
+                <a href="./assets/images/circuito-esp8266-max6675.png" aria-label="Abrir el diagrama de conexiones en tamaño completo">
+                  <img src="./assets/images/circuito-esp8266-max6675.png" alt="Diagrama de conexiones entre el ESP8266 y el módulo MAX6675, con las líneas SCK, SO y CS." width="737" height="405" loading="lazy">
+                </a>
+                <figcaption>Diagrama de conexiones del ESP8266 con el módulo MAX6675.</figcaption>
+              </figure>
+            </div>
+          </section>
+        </article>
+
+        <section class="other-projects" aria-labelledby="other-title">
+          <div class="section-subhead">
+            <p class="section-label">Otros proyectos</p>
+            <h3 id="other-title">Dos trabajos académicos</h3>
+          </div>
+
+          <article class="project-row" aria-labelledby="polizas-title">
+            <div class="project-heading">
+              <p class="project-index">02</p>
+              <h3 id="polizas-title">Sistema de gestión de pólizas</h3>
+              <p class="project-meta">Proyecto académico · 2025</p>
+            </div>
+            <div class="project-body">
+              <p>Aplicación web y móvil conectadas a una API compartida, con módulos de cotización, aseguradoras, agentes y control de roles.</p>
+              <p class="tech-line">Spring Boot · Spring Security · JPA · MySQL · React · React Native</p>
+            </div>
+          </article>
+
+          <article class="project-row" aria-labelledby="pwa-title">
+            <div class="project-heading">
+              <p class="project-index">03</p>
+              <h3 id="pwa-title">PWA con funcionamiento offline</h3>
+              <p class="project-meta">Práctica académica · 2026</p>
+            </div>
+            <div class="project-body">
+              <p>Registro de incidencias que conserva envíos pendientes en IndexedDB y los sincroniza mediante un Service Worker cuando vuelve la conexión.</p>
+              <p class="tech-line">JavaScript Vanilla · IndexedDB · Service Worker · Background Sync</p>
+              <p class="project-note">Utiliza una API de prueba para simular los envíos.</p>
+              <p class="project-links">
+                <a class="text-link" href="https://loreley100.github.io/pwa-outbox-practica/" target="_blank" rel="noopener noreferrer">Ver demo <span aria-hidden="true">↗</span><span class="sr-only"> (abre en una pestaña nueva)</span></a>
+                <a class="text-link" href="https://github.com/Loreley100/pwa-outbox-practica" target="_blank" rel="noopener noreferrer">Ver código <span aria-hidden="true">↗</span><span class="sr-only"> (abre en una pestaña nueva)</span></a>
+              </p>
+            </div>
+          </article>
+        </section>
+      </div>
+    </section>
+
+    <section class="section" id="sobre-mi" aria-labelledby="about-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="section-label">02 · Sobre mí</p>
+          <h2 id="about-title">Formación, intereses y herramientas</h2>
+          <p class="section-intro">Mi formación y las herramientas con las que he trabajado en proyectos académicos y durante la estadía.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-copy">
+            <p>Soy Técnico Superior Universitario en Desarrollo de Software Multiplataforma y continúo mi formación en Ingeniería en Desarrollo y Gestión de Software en UTEZ. Me interesa el desarrollo de sistemas, las bases de datos y la resolución de problemas técnicos. Durante mi estadía en CENIDET integré hardware y software para monitorear un proceso real.</p>
+            <p class="small-note">Las tecnologías de esta sección provienen de mi CV; no todas se usaron en CENIDET.</p>
+          </div>
+
+          <div class="about-details">
+            <section aria-labelledby="conocimientos-title">
+              <h3 id="conocimientos-title">Conocimientos</h3>
+              <dl class="knowledge-list">
+                <div>
+                  <dt>Desarrollo</dt>
+                  <dd>Java, JavaScript, Spring Boot, React y Node.js.</dd>
+                </div>
+                <div>
+                  <dt>Datos</dt>
+                  <dd>SQL, MySQL, SQL Server y MongoDB.</dd>
+                </div>
+                <div>
+                  <dt>IoT</dt>
+                  <dd>ESP8266, C++ y sensores.</dd>
+                </div>
+                <div>
+                  <dt>Herramientas</dt>
+                  <dd>Git, pruebas con JUnit/Cypress y Docker básico.</dd>
+                </div>
+              </dl>
+            </section>
+
+            <section aria-labelledby="formacion-title">
+              <h3 id="formacion-title">Formación</h3>
+              <ul class="education-list">
+                <li>
+                  <strong>Ingeniería en Desarrollo y Gestión de Software</strong>
+                  <span>UTEZ · en curso</span>
+                </li>
+                <li>
+                  <strong>TSU en Desarrollo de Software Multiplataforma</strong>
+                  <span>UTEZ · 2025</span>
+                </li>
+              </ul>
+              <p class="small-note">Formación complementaria: AWS Cloud Foundations, Cisco Networking Academy y Oracle Academy.</p>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contacto" aria-labelledby="contact-title">
+      <div class="wrap contact-grid">
+        <div>
+          <p class="section-label">03 · Contacto</p>
+          <h2 id="contact-title">Escríbeme</h2>
+          <p>Para conversar sobre el proyecto CENIDET o una oportunidad de estadía profesional, la forma más directa es por correo.</p>
+        </div>
+
+        <div class="contact-panel">
+          <address class="contact-details">
+            <strong>Loreley Carrillo Juárez</strong>
+            <span>Cuernavaca, Morelos</span>
+            <a href="mailto:loreleycj@gmail.com">loreleycj@gmail.com</a>
+          </address>
+          <a class="button" href="mailto:loreleycj@gmail.com">Escribirme por correo</a>
+          <p class="github-link">También puedes consultar mi trabajo en <a href="https://github.com/Loreley100" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span><span class="sr-only"> (abre en una pestaña nueva)</span></a>.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Loreley Carrillo Juárez · Portafolio profesional</p>
+    </div>
+  </footer>
+
+  <script src="./app.js" defer></script>
+</body>
+</html>

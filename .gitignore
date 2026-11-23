@@ -1,0 +1,10 @@
+# Documentos fuente privados: no publicar en el sitio
+sources/
+*.docx
+*.pdf
+!cv-publico.pdf
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+desktop.ini
